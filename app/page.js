@@ -77,7 +77,7 @@ export default function HomePage() {
           placeholder="Enter a word..."
           value={word}
           onChange={(e) => setWord(e.target.value)}
-          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black text-white"
         />
         <div className="flex gap-2 mt-4">
           <button
@@ -112,7 +112,7 @@ export default function HomePage() {
               <li
                 key={index}
                 onClick={() => selectSynonymAndSearch(synonym.word)}
-                className="p-3 bg-white border rounded-lg shadow-sm hover:bg-gray-100 cursor-pointer"
+                className="p-3 border rounded-lg shadow-sm hover:bg-gray-600 cursor-pointer  bg-black text-white"
               >
                 {synonym.word}
               </li>
