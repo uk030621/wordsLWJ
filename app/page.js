@@ -67,8 +67,9 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col items-center justify-start min-h-screen bg-gray-50 p-4">
-      <h1 className="text-4xl font-bold text-left text-slate-600 mb-6 w-full">
-        Word App
+      <h1 className="text-4xl font-bold text-center text-slate-600 mb-6 w-full">
+        Word
+        <span className="block text-lg">Definition Finder</span>
       </h1>
 
       <div className="w-full max-w-md">
@@ -77,7 +78,7 @@ export default function HomePage() {
           placeholder="Enter a word..."
           value={word}
           onChange={(e) => setWord(e.target.value)}
-          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black text-white"
+          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-700 text-white placeholder-yellow-300"
         />
         <div className="flex gap-2 mt-4">
           <button
